@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:demo_app/next_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -54,7 +55,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 leading: Icon(Icons.key),
                 title: Text(titleList[index]),
                 onTap: () {
-                  print('List has taped');
+                  Navigator.push(context,MaterialPageRoute(
+                          builder: (context) => NextPage(titleList[index])));
                 },
               ),
               //線を引く
