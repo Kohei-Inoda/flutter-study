@@ -11,27 +11,34 @@ class NextPage extends StatelessWidget {
         title: Text(title),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(100.0),
+        padding: const EdgeInsets.all(100),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                SizedBox(width: 40, child: Text('ID')),
-                Text('：毎回同じIDを表示'),
-              ],
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Row(
-              children: [
-                SizedBox(width: 40, child: Text('PW')),
-                Text('：毎回同じPWを表示'),
-              ],
-            )
-          ],
-        ),
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  SizedBox(width: 40, child: Text('ID')),
+                  Text('：毎回同じIDを表示'),
+                ],
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                children: [
+                  SizedBox(width: 40, child: Text('PW')),
+                  Text('：毎回同じPWを表示'),
+                ],
+              ),
+              SizedBox(height: 10,),
+              Row(
+                children:[
+                  SizedBox(width: 40, child: Text("住所")),
+                  Text("：ユーザの住所を表示")
+                ],
+              ),
+            ],
+          ),
       ),
     );
   }
